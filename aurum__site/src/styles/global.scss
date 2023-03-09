@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headerImage {
+    background: url('https://www.figma.com/file/aRn8pcY2WlbhNDwxbCH6mt/image/c8d3927f004ca35f5abcb748be5bdca222fe2ad9?fuid=1067019850073163099') no-repeat;
+    background-size: cover;
+    background-position: center 80%;
+    z-index: 0;
+}
+
+.headerBg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(180deg, #28364B 0%, rgba(40, 54, 75, 0.77) 46.44%, rgba(40, 54, 75, 0) 100%);
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
