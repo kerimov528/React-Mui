@@ -3,27 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Montserrat';
 
     a {
         color: #fff;
     }
-}
-
-.headerImage {
-    background: url('https://www.figma.com/file/aRn8pcY2WlbhNDwxbCH6mt/image/c8d3927f004ca35f5abcb748be5bdca222fe2ad9?fuid=1067019850073163099') no-repeat;
-    background-size: cover;
-    background-position: center 80%;
-    z-index: 0;
-}
-
-.headerBg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: linear-gradient(180deg, #28364B 0%, rgba(40, 54, 75, 0.77) 46.44%, rgba(40, 54, 75, 0) 100%);
-    z-index: -1;
-    top: 0;
-    left: 0;
 }
 
 .headerMenuLine::after {
@@ -50,7 +34,6 @@
     position: relative;
 
     .link {
-        font-family: 'Montserrat';
         font-style: normal;
     }
 
@@ -70,5 +53,37 @@
         left: 0;
         position: absolute;
         z-index: 1;
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    top: 100px;
+    color: #fff;
+
+    &::after {
+        font-size: 27px;
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background-color: #CEBD88;
+    position: relative;
+    margin-right: .3rem;
+}
+
+.swiper-pagination-bullet-active {
+    &::after {
+        content: '';
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid #CEBD88;
+        position: absolute;
+        top: -30%;
+        left: -30%;
     }
 }

@@ -7,7 +7,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { NavLink } from 'react-router-dom'
 
-const Header = () => {
+const Header = ({ component }) => {
 
     const menuList = ['Ana səhifə', 'Haqqımızda', 'Xidmətlər', 'Gəmilər', 'Karyera', 'Qalereya', 'Əlaqə']
 
@@ -16,11 +16,17 @@ const Header = () => {
     return (
         <Container
             disableGutters
-            maxWidth='1440px'
-            sx={{ minHeight: '50vh', p: '35px 135px', position: 'relative' }}
+            maxWidth='100%'
+            sx={{
+                background: "url('https://www.figma.com/file/aRn8pcY2WlbhNDwxbCH6mt/image/c8d3927f004ca35f5abcb748be5bdca222fe2ad9?fuid=1067019850073163099') no-repeat",
+                backgroundSize: 'cover', backgroundPosition: 'center 80%', zIndex: '0',
+                p: '35px 135px', position: 'relative'
+            }}
             className='headerImage'
         >
-            <Box className='headerBg' />
+            {/* background shadow  */}
+            <Box width='100%' height='100%' position='absolute' top='0' left
+                ='0' zIndex='-1' sx={{ background: 'linear-gradient(180deg, #28364B 0%, rgba(40, 54, 75, 0.77) 46.44%, rgba(40, 54, 75, 0) 100%)' }} />
 
             {/* first common section (logo) */}
             <Box display='flex' alignItems='center' justifyContent='space-between'>
@@ -50,6 +56,7 @@ const Header = () => {
                 </Box>
             </Box>
 
+            {/* menu list items section*/}
             <Box className='headerMenuLine' mt='1rem' width='100%' height='5rem' position='relative'>
                 <Box width='100%' display='flex' alignItems='center' justifyContent='center' position='absolute' bottom='0' >
                     {menuList.map((menuItem, keys) => {
@@ -66,7 +73,9 @@ const Header = () => {
                 </Box>
             </Box>
 
-        </Container>
+            {/* header title  */}
+            {component}
+        </Container >
     )
 }
 
