@@ -1,13 +1,21 @@
 import React from 'react'
 import Header from '../../components/elements/Header'
 import Carousel from '../../components/blocks/Carousel'
-import FirstSection from './components/FirstSection'
+import WhyUs from './components/WhyUs'
+import CountUp from './components/CountUp'
+import VideoSection from './components/VideoSection'
+import Blogs from './components/Blogs'
+import Footer from '../../components/elements/Footer'
 
 const Home = () => {
     return (
         <>
             <Header component={<Carousel />} />
-            <FirstSection />
+            <WhyUs />
+            <CountUp />
+            <VideoSection />
+            <Blogs />
+            <Footer />
         </>
     )
 }

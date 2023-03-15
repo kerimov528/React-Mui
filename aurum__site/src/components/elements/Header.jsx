@@ -22,7 +22,6 @@ const Header = ({ component }) => {
                 backgroundSize: 'cover', backgroundPosition: 'center 80%', zIndex: '0',
                 p: '35px 135px', position: 'relative'
             }}
-            className='headerImage'
         >
             {/* background shadow  */}
             <Box width='100%' height='100%' position='absolute' top='0' left

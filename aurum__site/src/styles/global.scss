@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
     font-family: 'Montserrat';
 
     a {
         color: #fff;
+        text-decoration: none;
     }
 }
 
@@ -71,7 +71,7 @@
     height: 16px;
     background-color: #CEBD88;
     position: relative;
-    margin-right: .3rem;
+    margin-right: .7rem;
 }
 
 .swiper-pagination-bullet-active {
@@ -83,7 +83,8 @@
         background-color: transparent;
         border: 1px solid #CEBD88;
         position: absolute;
-        top: -30%;
-        left: -30%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
